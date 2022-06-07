@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+
+    
+    <h1>BASE DE DATOS</h1>
+    <h2>COMO HACER UNA BASE DE DATOS</h2>
+    <h3>FASES</h3>
+    <ol>
+        <li>planeacion y analisis</li>
+        <li>desarrollo</li>
+        <li>pruebas/correcciones</li>
+        <li>puesta en marcha</li>
+    </ol>
+    <h3>EL MODELO ENTIDAD/RELACION</h3>
+    
+    <P>
+        <h4>¿QUE ES?</h4>
+        Es el modelo usado para construir bases de datos relacionales,
+        permite reprensentar de manera simple los componentes que 
+        participan en un proceso de negocio
+    </P>
+    <p>
+        <h4>USOS</h4>
+        Nos permite generar diagramas que ayudan a generar la
+        estructura de los datos con la que se trata un problema
+    </p>
+    <p>
+        <h4>IMPORTANCIA</h4>
+        La mayoria de las basees de datos creadas usan este modelo
+        adaptando como lenguaje es estandar SQL
+    </p>
+    <P>
+        <h4>INFORMACION ORGANIZADA EN TABLAS</h4>
+        Estas tablas contienen registros o filas cada fia contiene campos
+        o columnas
+        <br> 
+        <b>mi nota: </b>
+        una entidad es una tabla :)
+    </P>
+    <h3>ELEMNTOS DEL MODELO ENTIDAD RELACION</h3>
+    <P>
+        <h4>ENTIDADES</h4>
+        <b>DE LO QUE SE VA HABLAR</b>
+        <br>
+        Representan cosas u objetos de la vida real sean
+        cosas reales(como la informacion de un coche) o
+        abstractas(como el puesto de un empleado), estas
+        siempre son diferentes unas de otras
+    </P>
+    <p>
+        <h4>ATRIBUTOS</h4>
+        <b>CARACTERISTICAS DE LO QUE SE HABLA</b>
+        <br>
+        Son todos aquellos componentes o cualidades que conforman y definen
+        a una entidad, estos datos hacen que una <u>instancia de una entidad sea
+        diferente a otra instancia</u>
+        <br>
+        <b>mi nota:</b>
+        una instancia es un registro
+
+    </p>
+    <P>
+        <h4>RELACIONES</h4>
+        <b>LO QUE UNE LO QUE SE HABLA</b>
+        <br>
+        Vinculo que permite definir una dependencia entre
+        las entidades. Existen varios tipos de relaciones posibles
+    </P>
+    <p>
+        <h4>CARDINALIDAD DE RELACIONES</h4>
+        <li>1 a 1</li>
+        una entidad junto a otro
+        <li>1 a M</li>
+        una entidad junto con muchas
+        <li>N a M</li>
+        muchas entidades junto con muchas mas
+
+    </p>
+    <p>
+        <h4>LLAVE PRIMARY - PRIMARY KEY</h4>
+        <B>IDENTIFICADOR UNICO</B>
+        <br>
+        Propiedad que hace que el valor de un campo o columna
+        sea único y no se pueda repetir
+        <li>ENTIDAD: EMPLEADO</li>
+        <img src="entidad-persona.png" alt="">
+    </p>
+    <p>
+        <h4>LLAVE FORÁNEA - FOREIGN KEY</h4>
+        <B>IDENTIFICADOR DE OTRO IDENTIFICADOR UNICO</B>
+        <br>
+        Propiedad que hace referencia a la llave primaria de otra tabla
+        <img src="entidad-persona-departamento.png" alt="">
+        ENTIDAD: EMPLEADO -------------------------------------------------- ENTIDAD: DEPARTAMENTO
+        <BR></BR>
+        <B>mi nota: </B>
+        <br>
+        este sitio web no tiene el proposito de que usted aprenda a diseñar
+        modelos entidad-relacion
+        <img src="modelos-entidad-relacion.png" alt="">
+    </p>
+    <p>
+        <h4>ENTIDAD RELACION MODO ORACLE</h4>
+        <img src="entidad-relacion-oracle.png" alt=""> 
+        <br> 
+        la tercera relacion de muchos a mucho no tiene mucho sentido
+        asi que lo descartamos. <br>
+        La opcion ideal seria un departamento tiene muchos empleados <b>1 - M</b>
+        <br> <br>
+        <img src="relacion-grafica.png" alt=""> 
+        <br> 
+        este grafico es de manera mas intuitiva(esta relacion es obligatoria)
+        <br> <br>
+        <img src="relacion-opcional-departamento.png" alt="">
+        <br>
+        este grafico es opcional para la relacion empleado, el departamento puede tener
+        uno o mas empleados
+        <br> <br>
+        <img src="opcional-cadalado.png" alt="">
+        <br>
+        Este grafico es opcionla para cada lado.
+
+    </p>
+
+    <h2>¿QUE ES SQL?</h2>
+    <P>
+        <h4>STRUCTURED QUERY LANGUAGE</h4>
+        Lenguaje desarrollado para poder creaar bases de datos, 
+        ingresar y manipular la informacion dentro de estas.
+        <br>
+        Para usar SQL vamos a necesitar un gestor de bases de datos,
+        como por ejemplo:
+        <li>Xammp</li>
+        Si quieres seguir aprendiendo sigue este <a href="https://youtu.be/QgAX3qKm8-0?t=1720">video de youtube.</a>
+        <br>
+        Gracias.
+    </P>
+</body>
+
+</html>
